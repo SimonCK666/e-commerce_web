@@ -1,0 +1,40 @@
+/*定义container使网页内容无论放大缩小均居中非平铺*/
+.container {
+	display: block;
+	max-width: 1080px;
+	/*居中*/
+	margin: 0 auto;
+}
+
+/*定义tabbar的左浮动与有浮动*/
+.fl {
+	float: left;
+}
+.fr {
+	float: right;
+}
+
+/*清除clear-float类的首元素与尾元素的浮动*/
+.clear-float:after,
+.clear-float:before {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*使几个元素并列显示成列*/
+p {
+	width: 25%;
+	float: left;
+}
+.content {
+	display: block;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+a {
+	/*Eliminate underline(消除下划线)*/
+	/*a 的默认为inline，如果要改变行高需要使用display: inline-block;*/
+	text-decoration: none;
+}

@@ -1,0 +1,135 @@
+/*debugging background-color*/
+/** {
+	background: rgba(0,0,0,.1);
+}*/
+
+/*the global variable*/
+* {
+	-webkit-box-sizing: border-box;
+	box-shadow: border-box;
+	transition: background 200ms;
+}
+
+/*define the container rule*/
+.container {
+	display: block;
+	max-width: 1080px;
+	margin: 0 auto;
+}
+
+.clear-float:after,
+.clear-float:before {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+/*define a rule of the columns*/
+.col-2,
+.col-3,
+.col-5,
+.col-6 {
+	display: block;
+	position: relative;
+	min-height: 1px;
+	float: left;
+}
+
+.col-2 {
+	width: 20%;
+}
+.col-3 {
+	width: 30%;
+}
+.col-5 {
+	width: 50%;
+}
+.col-6 {
+	width: 60%;
+}
+
+a {
+	/*Eliminate underline*/
+	text-decoration: none;
+}
+
+/*top-nav*/
+#web-page .top-nav {
+	background: #eee;
+}
+
+#web-page .top-nav .item {
+	/*The default of a is inline*/
+	display: inline-block;
+	padding: 6px 10px;
+	color: #F08080;
+}
+
+#web-page .top-nav .item:hover {
+	color: #DC143C;
+}
+
+#web-page .top-nav .container .fl {
+	float: left;
+}
+#web-page .top-nav .container .fr {
+	float: right;
+}
+
+
+/*header*/
+#web-page .header {
+	padding: 20px 0;
+}
+
+#web-page .header .logo {
+	width: 100px;
+	height: 50px;
+}
+
+#web-page .header .search-bar {
+	border: 2px solid #FF4500;
+}
+
+#web-page .header .search-bar input,
+#web-page .header .search-bar button {
+	display: block;
+	float: left;
+	border: 0;
+	padding: 8px;
+}
+
+#web-page .header .search-bar input {
+	color: #808080;
+	background: #C0C0C070;
+	width: 80%;
+}
+
+#web-page .header .search-bar input:focus {
+	/*向内投影，横向偏移，纵向便宜，羽化，扩充，color*/
+	box-shadow: inset 0 0 2px 2px rgba(0,0,0,.4);
+}
+
+#web-page .header .search-bar button {
+	width: 20%;
+	background: #FF4500;
+	color: #FFFFFF;
+	font-style: solid;
+}
+
+#web-page .header .search-bar button:hover {
+	background: #FF0000;
+}
+
+#web-page .header .car {
+	text-align: center;
+}
+
+#web-page .header .car a {
+	float: right;
+	padding: 10px;
+	background: #fff;
+	border: 2px solid #eee;
+	width: 80%;
+	color: #FF4500;
+}
